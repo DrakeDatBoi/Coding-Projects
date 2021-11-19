@@ -1,0 +1,80 @@
+
+Author tags found: [(none), (none)] (in Location.java, Backpacker.java)
+
+
+
+
+Summary: CS227 Assignment 1 Fall 2020
+-------------------------------------
+Name                            Points    Exceptions
+----------------------------------------------------
+Location and Backpacker tests   32/50     0
+----------------------------------------------------
+Total                           32/50     0
+
+
+---------------
+Test Suite:  Location and Backpacker tests
+
+Description: Tests methods of Location and Backpacker classes
+---------------
+   : (Spec conformance)
+   : (Spec conformance)
+   : (Spec conformance)
+   : For new Location (Paris, 75), getName should return correct value. 
+   : For new Location (Paris, 75), lodgingCost should return 75. 
+   : For Location (Paris, 75), postcard cost should be 4. 
+   : For Location (Barcelona, 45), postcard cost should be 2. 
+   : For Location (Paris, 75), max length of stay with 500 should be 6. 
+   : For Location (Paris, 75), max length of stay with 50 should be 0. 
+   : For Location (Rome, 50), max length of stay with 500 should be 10. 
+   : For Location (Paris, 75), max postcards with 50 should be 12. 
+   : For Location (Paris, 75), max postcards with 3 should be 0. 
+   : For new Backpacker (500, Paris/75), getCurrentLocation should return string 'Paris'. 
+   : For new Backpacker (500, Paris/75), getJournal should return string 'Paris(start)'. 
+   : For new Backpacker (500, Paris/75), after visit to Rome/50, getCurrentLocation should return string 'Rome'. 
+   : For new Backpacker (500, Paris/75), after visit to Rome/50 x 2 nights, getJournal should return correct string. 
+        : Failed Test: Expected: "Paris(start),Rome(2)", found "Paris(start)Rome(2),". 
+   : For new Backpacker (1000, London/200), after visit to Rome/50 x 2 nights, then Paris/75 x 7 nights, getCurrentLocation should return string 'Paris'. 
+   : For new Backpacker (1000, London/200),, after visit to Rome/50 x 2 nights, then Paris/75 x 7 nights, getJournal should return correct string. 
+        : Failed Test: Expected: "London(start),Rome(2),Paris(7)", found "London(start)Rome(2),Paris(7),". 
+   : For new Backpacker (500, Paris/75), after visiting 10 cities, journal should be correct. 
+        : Failed Test: Expected: "Paris(start),Location1(1),Location2(2),Location3(3),Location4(4),Location5(5),Location6(6),Location7(7),Location8(8),Location9(9),Location10(10)", found "Paris(start)Location1(1),Location2(2),Location3(3),Location4(4),Location5(5),Location6(6),Location7(7),Location8(8),Location9(9),Location10(10),". 
+   : For new Backpacker (500, Paris/75), getCurrentFunds should return 500. 
+   : For new Backpacker (500, Paris/75), after visit to Rome/50 x 2 nights, getCurrentFunds should return 400. 
+   : For new Backpacker (400, Rome/50), after visit to Paris/75 x 7 nights, getCurrentFunds should return 25. 
+   : For new Backpacker (500, Paris/75), after visit to Rome/50 x 2 nights, then Paris/75 x 7 nights, getCurrentFunds should return 25. 
+   : For new Backpacker (500, Paris/75), after visit to Rome/50 x 2 nights, then Paris/75 x 7 nights, then Paris/75 x 7 nights, getCurrentFunds should return 25. 
+   : For new Backpacker (1000, Paris/75), after visit to London/200 x 3 nights, then Paris/75 x 7 nights, then Prague/7 x 10 nights, getCurrentFunds should return 4. 
+   : For new Backpacker (1000, Rome/50), after visiting 10 cities (Location_i/10i) 1 night each, funds should be correct. 
+   : For new Backpacker (500, Paris/75), after visit to Rome/50 x 2 nights, then Paris/75 x 7 nights, nights in train station should be 2. 
+   : For new Backpacker (500, Paris/75), after visit to Rome/50 x 2 nights, then Paris/75 x 7 nights, then Paris/75 x 7 nights, nights in train station should be 9. 
+        : Failed Test: expected:<9> but was:<7>
+   : For new Backpacker (1000, Paris/75), after visit to London/200 x 3 nights, then Paris/75 x 7 nights, then Prague/7 x 12 nights, getCurrentFunds should return 4. 
+        : Failed Test: expected:<11> but was:<9>
+   : For new Backpacker (25, Paris/75), after attempt to send 1 postcard, getCurrentFunds should return 21. 
+        : Failed Test: expected:<21> but was:<25>
+   : For new Backpacker (25, Paris/75), after attempt to send 1 postcard, then 12 postcards, getCurrentFunds should return 1. 
+        : Failed Test: expected:<1> but was:<25>
+   : For new Backpacker (25, Barcelona/45), after send 3 postcards from Barcelona/45, 1 from Paris/75, 2 from Barcelona/45, 5 from Paris/75, getCurrentFunds should return 3. 
+        : Failed Test: expected:<3> but was:<25>
+   : For new Backpacker (25, Paris/75), after 1 postcard, then callHomeForMoney, getCurrentFunds should return 51. 
+        : Failed Test: expected:<51> but was:<55>
+   : For new Backpacker (25, Paris/75), after 6 postcards, then callHomeForMoney, getCurrentFunds should return 181. 
+        : Failed Test: expected:<181> but was:<55>
+   : For new Backpacker (25, Paris/75), after 1 postcard, then callHomeForMoney twice, getCurrentFunds should return 51. 
+        : Failed Test: expected:<51> but was:<85>
+   : For new Backpacker (25, Barcelona/45), after send 3 postcards from Barcelona/45, 1 from Paris/75, 2 from Barcelona/45, 5 from Paris/75, then callHomeForMoney, getCurrentFunds should return 243. 
+        : Failed Test: expected:<243> but was:<55>
+   : For new Backpacker (4, Paris/75), isSOL should return false. 
+   : For new Backpacker (3, Paris/75), isSOL should return true. 
+   : For new Backpacker (3, Paris/75), isSOL should return true, but after going to Barcelona/45, isSOL should return false. 
+---------------
+Tests Passed:       27/39
+Exceptions Thrown:  0
+Score:              23/35
+Scaled Score:       32/50
+---------------
+
+
+
