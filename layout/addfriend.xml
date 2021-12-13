@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="1dp"
+    android:paddingTop="16dp"
+    android:background="#502020"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Add Friend Between"
+        android:textColor="#bf9000"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/editUserOne"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColor="#bf9000"
+        android:text="UserOne"/>
+
+
+    <EditText
+        android:id="@+id/editUserTwo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColor="#bf9000"
+        android:text="UserTwo"/>
+
+    <Button
+        android:id="@+id/btnAdd_Friend"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="#bf9000"
+        android:text="Add Friend" />
+
+    <Button
+        android:id="@+id/btnRemoveFriend"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#bf9000"
+        android:text="Remove Friend" />
+
+
+</LinearLayout>

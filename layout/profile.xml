@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="1dp"
+    android:paddingTop="16dp"
+    android:background="#502020"
+    tools:context=".MainActivity" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginBottom="610dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:background="#bf9000"
+            android:text="Back"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="User Profile"
+            android:textColor="#bf9000"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:background="#bf9000"
+            android:text="Log Out"
+            android:textSize="15dp" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/btnBio"-->
+        <!--            android:layout_width="390dp"-->
+        <!--            android:layout_height="60dp"-->
+        <!--            android:layout_marginTop="85dp"-->
+        <!--            android:layout_marginLeft="-375dp"-->
+        <!--            android:text="User Bio"-->
+        <!--            android:textColor="#bf9000"-->
+        <!--            android:textSize="20dp" />-->
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ChangeImg"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-570dp" />
+
+    <TextView
+        android:id="@+id/setName"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="3dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Name Name"
+        android:textColor="#bf9000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="3dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Location: Somewhere"
+        android:textColor="#bf9000"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="-125dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAddFriend"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:background="#bf9000"
+            android:text="Add Friend"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/btnFriends"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#bf9000"
+            android:text="Friends"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/btnMap"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#bf9000"
+            android:text="Map"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/btnSetting"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:background="#bf9000"
+            android:text="Settings"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/enterPost"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="150dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="2dp"
+        android:textColor="#bf9000"
+        android:text="Write text"/>
+
+    <Button
+        android:id="@+id/btnPost"
+        android:layout_width="380dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="0dp"
+        android:background="#bf9000"
+        android:text="Post"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/btnFeed"
+        android:layout_width="380dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:background="#bf9000"
+        android:text="View Feed"
+        android:textSize="12dp" />
+
+</LinearLayout>
