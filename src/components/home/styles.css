@@ -1,0 +1,63 @@
+/* STYLING FOR HOME COMPONENT ELEMENTS */
+
+.home-welcome {
+	position: relative;
+	height: calc(90vh - 50px);
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.home-welcome-image {
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	width: 100%;
+	object-fit: cover;
+	filter: blur(2px);
+	transform: scale(1.1);
+}
+
+.home-welcome-center {
+	position: relative;
+	height: 20vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+
+.home-welcome-text {
+	color: #FFF;
+	font-size: 6vmin;
+	font-weight: bolder;
+	text-align: center;
+	text-shadow: 0.2vmin 0.4vmin #200;
+	animation: 0.8s ease-out slide-up;
+}
+
+.home-welcome-button-container {
+	display: flex;
+	padding-top: 1%;
+	justify-content: center;
+	align-items: center;
+	gap: 5vmin;
+	animation: 1.2s ease-out slide-up;
+}
+
+.home-welcome-button {
+	width: 15vmin;
+	height: 5vmin;
+}
+
+@keyframes slide-up {
+	from {
+		opacity: 0.25;
+		margin-top: 2vh;
+	}
+	to {
+		opacity: 1.0;
+		margin-top: 0px;
+	}
+}
