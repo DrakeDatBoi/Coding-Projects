@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="1dp"
+    android:paddingTop="16dp"
+    android:background="#502020"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Enter your name and email"
+        android:textColor="#bf9000"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColor="#bf9000"
+        android:text="Name"/>
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:textColor="#bf9000"
+        android:text="Email"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Create your username and password"
+        android:textColor="#bf9000"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColor="#bf9000"
+        android:text="Username"/>
+
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColor="#bf9000"
+        android:text="Password"/>
+
+    <EditText
+        android:id="@+id/editConfirmPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColor="#bf9000"
+        android:text="Confirm Password"/>
+
+    <EditText
+        android:id="@+id/editLocation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColor="#bf9000"
+        android:text="Location (State)"/>
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#bf9000"
+        android:text="Create Account" />
+
+
+
+</LinearLayout>
